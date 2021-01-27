@@ -1,0 +1,19 @@
+/* main */
+.textarea-container {
+    color: white;
+  }
+  .textarea-container > textarea {
+    border-radius: 3px;
+    padding: 1ch;
+  }
+  
+  #entry-holder p {
+    font-size: 1.25rem;
+    text-indent: 2ch;
+  }
+  #entry-holder span {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: "Chewy", cursive;
+  }

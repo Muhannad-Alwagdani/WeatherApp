@@ -1,0 +1,7 @@
+@import "i_header.css";
+@import "i_main.css";
+
+body {
+  background-color: #333;
+  color: white;
+}

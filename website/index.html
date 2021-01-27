@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <!-- Bootstrap from node_modules -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
+    <title>WeatherApp</title>
+</head>
+<body>
+    <!-- Header contains sun, cloud and title of the app -->
+    <header class="d-flex justify-content-center w-100 header">
+        <div class="header__content d-flex">
+            <div class="logo m-2">
+                <div class="logo__sun">
+
+                </div>
+                <div class="logo__cloud">
+                    <div class="cloud"></div>
+                    <div class="cloud"></div>
+                    <div class="cloud"></div>
+                    <div class="cloud"></div>
+                </div>
+
+            </div>
+            <div class="title mx-4">
+                <h1 class="title__text mt-1">Weather App</h1>
+            </div>
+        </div>
+    </header>
+    <!-- Main contains the input fields where user puts their input (text inout and text field) -->
+    <main>
+        <div class="input-group my-3 w-75 mx-auto">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Zip code : </span>
+            </div>
+            <input id="zip" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="enter zip code here" required>
+        </div>
+        <div class="textarea-container w-75 mx-auto">
+            <label for="feelings">How are you feeling today?</label>
+            <textarea class="w-100 mx-auto" name="" id="feelings" rows="10" placeholder="Enter your feelings here" required></textarea>
+        </div>
+        <div class="d-flex justify-content-between button-container w-75 mx-auto">
+            <button id="generate" class="btn btn-outline-success w-50 mr-1">Generate</button>
+            <button id="clear" class="btn btn-outline-danger w-50 ml-1">Clear</button>
+        </div>
+        <div id="entry-holder" class="w-75 mx-auto mt-3">
+            <div id="city">
+                <span></span><p></p>
+            </div>
+            <div id="date">
+                <span></span><p></p>
+            </div>
+            <div id="temp">
+                <span></span><p></p>
+            </div>
+            <div id="content">
+                <span></span><p></p>
+            </div>
+        </div>
+
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="src/js/app.js"></script>
+</body>
+</html>
